@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Piket Zootopia</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --primary-color: #0b3c5d;
+            --secondary-color: #328cc1;
+            --accent-orange: #e05a47;
+            --accent-green: #1d9d74;
+            --card-bg: #ffffff;
+            --text-color: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-top: 8px solid var(--accent-green);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: var(--accent-green);
+            font-size: 2.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: var(--accent-orange);
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .image-section {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            border: 4px solid var(--secondary-color);
+        }
+
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, var(--accent-green), var(--secondary-color), var(--accent-orange));
+            margin: 30px 0;
+            border: none;
+        }
+
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .day-card {
+            background-color: #ffffff;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .day-title {
+            background-color: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .day-card:nth-child(2) .day-title {
+            background-color: var(--secondary-color);
+        }
+
+        .day-card:nth-child(3) .day-title {
+            background-color: var(--accent-green);
+        }
+
+        .day-card:nth-child(4) .day-title {
+            background-color: var(--accent-orange);
+        }
+
+        .day-card:nth-child(5) .day-title {
+            background-color: #6c5ce7;
+        }
+
+        .member-list {
+            list-style: none;
+            padding: 15px 20px;
+            margin: 0;
+        }
+
+        .member-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #e1e8ed;
+            color: var(--text-color);
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .member-list li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Jadwal Piket Kelas</h1>
+            <p>Zootopia Theme</p>
+        </header>
+
+        <div class="image-section">
+            <img src="Piket.jpg" alt="Poster Jadwal Piket Zootopia">
+        </div>
+
+        <hr class="divider">
+
+        <div class="schedule-grid">
+            
+            <div class="day-card">
+                <div class="day-title">Senin</div>
+                <ul class="member-list">
+                    <li>Zahra</li>
+                    <li>Falah</li>
+                    <li>Kanza</li>
+                    <li>Wulan</li>
+                    <li>Robith</li>
+                    <li>Wildan</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">Selasa</div>
+                <ul class="member-list">
+                    <li>Adhi</li>
+                    <li>Aulia</li>
+                    <li>Gilang</li>
+                    <li>Shihab</li>
+                    <li>Mela</li>
+                    <li>Azhar</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">Rabu</div>
+                <ul class="member-list">
+                    <li>Rere</li>
+                    <li>Takrit</li>
+                    <li>Annora</li>
+                    <li>Hilma</li>
+                    <li>Aini</li>
+                    <li>Nafla</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">Kamis</div>
+                <ul class="member-list">
+                    <li>Vigo</li>
+                    <li>Fa'iz</li>
+                    <li>Isna</li>
+                    <li>Zila</li>
+                    <li>Ririn</li>
+                    <li>Rania</li>
+                </ul>
+            </div>
+
+            <div class="day-card">
+                <div class="day-title">Jum'at</div>
+                <ul class="member-list">
+                    <li>Anisa</li>
+                    <li>Hilmi</li>
+                    <li>Arga</li>
+                    <li>Juna</li>
+                    <li>Fariha</li>
+                    <li>Danis</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Jadwal Piket Kebersihan Kelas</p>
+        </footer>
+    </div>
+
+</body>
+</html>
